@@ -1,0 +1,11 @@
+main
+	ADC_Init
+	config_ad
+	UART1_Init
+	ADC_Read
+		Delay_22us
+	IntToStr
+		WordToStr
+			Div_16X16_U
+	UART1_Write_Text
+		UART1_Write
